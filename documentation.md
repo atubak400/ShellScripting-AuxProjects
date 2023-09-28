@@ -59,6 +59,7 @@ read name
 
 # Display a greeting with the entered name
 echo "Hello, $name! Nice to meet you."
+```
 
 ![Control flow in action](./Images/11.png)
 
