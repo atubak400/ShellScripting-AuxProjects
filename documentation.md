@@ -239,6 +239,6 @@ cp -r "$source_dir"* "$backup_dir_with_timestamp"
 # Display a message indicating the backup process is complete
 echo "Backup completed. Files copied to: $backup_dir_with_timestamp"
 ```
-run this code: `sudo chmod +x bacup.sh`
+run this code: `sudo chmod +x backup.sh`
 
 ![Control flow in action](./Images/19.png)
