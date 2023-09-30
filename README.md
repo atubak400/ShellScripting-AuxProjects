@@ -7,3 +7,7 @@ Topic covered include;
 ### [Command Substitution](https://github.com/atubak400/ShellScripting-AuxProjects/blob/master/documentation.md#command-substitution)
 ### [Functions](https://github.com/atubak400/ShellScripting-AuxProjects/blob/master/documentation.md#functions)
 ### [Our First Shell Script](https://github.com/atubak400/ShellScripting-AuxProjects/blob/master/documentation.md#our-first-shell-script)
+### [Directory Manipulation and Navigation](https://github.com/atubak400/ShellScripting-AuxProjects/blob/master/documentation.md#variables)
+### [File Operations and Sorting](https://github.com/atubak400/ShellScripting-AuxProjects/blob/master/documentation.md#variables)
+### [ Working with Numbers and Calculations](https://github.com/atubak400/ShellScripting-AuxProjects/blob/master/documentation.md#variables)
+### [File Backup and Timestamping](https://github.com/atubak400/ShellScripting-AuxProjects/blob/master/documentation.md#variables)
