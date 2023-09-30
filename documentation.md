@@ -205,5 +205,40 @@ square_root=$(awk "BEGIN{ print sqrt($num2) }")
 echo "Number 1 raised to the power of 2: $power_of_2"
 echo "Square root of number 2: $square_root"
 ```
+run this code: `sudo chmod +x calculations.sh`
 
 ![Control flow in action](./Images/17.png)
+
+
+## File Backup and Timestamping
+
+This shell scripting example is focused on file backup and timestamp. As a DevOps Engineer backing up databases and other storage devices is one of the most common task you get to carryout. This script defines the source directory and backup directory paths. It then creates a timestamp using the current date and time, and creates a backup directory with the timestamp appended to its name. The script then copies all files from the source directory to the backup directory using the cp command with the -r option for recursive copying. Finally, it displays a message indicating the completion of the backup process and shows the path of the backup directory with the timestamp.
+
+step 1: On your terminal open a file backup.sh using the command `nano backup.sh`
+step 2: Copy and paste the code block below into the file.
+
+```bash
+#!/bin/bash
+
+# Define the source directory and backup directory
+source_dir="./"  # The current directory
+backup_dir="./backup"  # Directory within the source directory
+
+# Create a timestamp with the current date and time
+timestamp=$(date +"%Y%m%d%H%M%S")
+
+# Create the backup directory with the timestamp inside the source directory
+backup_dir_with_timestamp="$source_dir$backup_dir/backup_$timestamp"
+
+# Create the backup directory
+mkdir -p "$backup_dir_with_timestamp"
+
+# Copy all files from the source directory to the backup directory
+cp -r "$source_dir"* "$backup_dir_with_timestamp"
+
+# Display a message indicating the backup process is complete
+echo "Backup completed. Files copied to: $backup_dir_with_timestamp"
+```
+run this code: `sudo chmod +x bacup.sh`
+
+![Control flow in action](./Images/19.png)
