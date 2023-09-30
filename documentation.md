@@ -112,6 +112,8 @@ echo "Files in the current directory:"
 ls
 ```
 
+run this code: `sudo chmod +x navigating-linux-filesystem.sh`
+
 ![navigating linux file system](./Images/13.png)
 
 ## File Operations and Sorting
@@ -158,5 +160,7 @@ echo "File renamed."
 echo "Final sorted file:"
 cat sorted_files_sorted_alphabetically.txt
 ```
+
+run this code: `sudo chmod +x sorting.sh`
 
 ![Control flow in action](./Images/15.png)
