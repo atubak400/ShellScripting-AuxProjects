@@ -68,6 +68,9 @@ echo "Hello, $name! Nice to meet you."
 
 This script will display the current directory, create a new directory called "my _directory," change to that directory, create two files inside it, list the files, move back one level up, remove the "my directory" and its contents, and finally list the files in the current directory again.
 
+step 1: open a file named navigating-linux-filesystem.sh
+step 2: paste the code block below into your file.
+
 ```bash
 #!/bin/bash
 
@@ -110,3 +113,50 @@ ls
 ```
 
 ![navigating linux file system](./Images/13.png)
+
+## File Operations and Sorting
+
+This script creates three files (file1.txt, file2.txt, and file3.txt), displays the files in their current order, sorts them alphabetically, saves the sorted files in sorted_files.txt, displays the sorted files, removes the original files, renames the sorted file to sorted_files_sorted _alphabetically.txt, and finally displays the contents of the final sorted file.
+
+step 1: Open your terminal and create a file called sorting.sh using the command nano sorting.sh
+step 2: Copy and paste the code block below into the file
+
+```bash
+#!/bin/bash
+
+# Create three files
+echo "Creating files..."
+echo "This is file3." > file3.txt
+echo "This is file1." > file1.txt
+echo "This is file2." > file2.txt
+echo "Files created."
+
+# Display the files in their current order
+echo "Files in their current order:"
+ls
+
+# Sort the files alphabetically
+echo "Sorting files alphabetically..."
+ls | sort > sorted_files.txt
+echo "Files sorted."
+
+# Display the sorted files
+echo "Sorted files:"
+cat sorted_files.txt
+
+# Remove the original files
+echo "Removing original files..."
+rm file1.txt file2.txt file3.txt
+echo "Original files removed."
+
+# Rename the sorted file to a more descriptive name
+echo "Renaming sorted file..."
+mv sorted_files.txt sorted_files_sorted_alphabetically.txt
+echo "File renamed."
+
+# Display the final sorted file
+echo "Final sorted file:"
+cat sorted_files_sorted_alphabetically.txt
+```
+
+![Control flow in action](./Images/15.png)
