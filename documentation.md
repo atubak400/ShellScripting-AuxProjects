@@ -48,7 +48,7 @@ Script functions are reusable code blocks that can be defined and called within 
 
 ## Our First Shell Script
 
-The provided Bash script prompts the user to enter their name using the echo command and then reads their input using read. It subsequently displays a greeting message that includes the entered name using the echo command.
+The provided Bash script prompts the user to enter their name using the echo command and then reads their input using read. It subsequently displays a greeting message that includes the entered name using the `echo` command.
 
 ```bash
 #!/bin/bash
@@ -120,7 +120,7 @@ run this code: `sudo chmod +x navigating-linux-filesystem.sh`
 
 This script creates three files (file1.txt, file2.txt, and file3.txt), displays the files in their current order, sorts them alphabetically, saves the sorted files in sorted_files.txt, displays the sorted files, removes the original files, renames the sorted file to sorted_files_sorted _alphabetically.txt, and finally displays the contents of the final sorted file.
 
-step 1: Open your terminal and create a file called sorting.sh using the command nano sorting.sh
+step 1: Open your terminal and create a file called sorting.sh using the command `nano sorting.sh`
 step 2: Copy and paste the code block below into the file
 
 ```bash
@@ -164,3 +164,46 @@ cat sorted_files_sorted_alphabetically.txt
 run this code: `sudo chmod +x sorting.sh`
 
 ![Control flow in action](./Images/15.png)
+
+
+## Working with Numbers and Calculations
+
+This script defines two variables num1 and num2 with numeric values, performs basic arithmetic operations (addition, subtraction, multiplication, division, and modulus), and displays the results. It also performs more complex calculations such as raising num1 to the power of 2 and calculating the square root of num2, and displays those results as well. 
+
+step 1: On your terminal create a file called calculations.sh using the command `nano calculations.sh`
+step 2: Copy and paste the code block below:
+
+```bash
+#!/bin/bash
+
+# Define two variables with numeric values
+num1=10
+num2=5
+
+# Perform basic arithmetic operations
+sum=$((num1 + num2))
+difference=$((num1 - num2))
+product=$((num1 * num2))
+quotient=$((num1 / num2))
+remainder=$((num1 % num2))
+
+# Display the results
+echo "Number 1: $num1"
+echo "Number 2: $num2"
+echo "Sum: $sum"
+echo "Difference: $difference"
+echo "Product: $product"
+echo "Quotient: $quotient"
+echo "Remainder: $remainder"
+
+# Perform some more complex calculations
+power_of_2=$((num1 ** 2))
+square_root=$(awk "BEGIN{ print sqrt($num2) }")
+
+
+# Display the results
+echo "Number 1 raised to the power of 2: $power_of_2"
+echo "Square root of number 2: $square_root"
+```
+
+![Control flow in action](./Images/17.png)
