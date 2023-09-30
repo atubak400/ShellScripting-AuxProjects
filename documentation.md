@@ -107,5 +107,6 @@ echo "Directory removed."
 # List the files in the current directory again
 echo "Files in the current directory:"
 ls
+```
 
 ![navigating linux file system](./Images/13.png)
